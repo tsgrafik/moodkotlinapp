@@ -10,7 +10,19 @@
         android:layout_height="50dp"
         android:layout_width="match_parent">
 
-    </android.support.design.widget.AppBarLayout>
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:toolbarId="@+Id/toolbar"
+        app:layout_scrollFlags="scrollexitüntilcollapsed"
+        app:contentscrim="?attr/colorPrimary">
+
+
+    <android.support.w7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarsize"
+        android:layout_width="match_parent">
+
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -20,7 +32,3 @@
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-        </android.support.constraint.ConstraintLayout>
-    </android.support.v4.widget.NestedScrollView>
-</android.support.design.widget.CoordinatorLayout>
